@@ -1,0 +1,189 @@
+/* Importa a fonte Poppins do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Reset de estilos padrão e definição da fonte padrão para o corpo da página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  background: #dddd;
+}
+
+/* Estilos para o cabeçalho */
+header {
+  color: rgb(216, 83, 22);
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s;
+}
+
+/* Barra de navegação */
+.navigation {
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #a39d9d;
+  width: 100%;
+  padding: 8px 20px 0;
+  box-shadow: 0 0.1rem 0.5rem #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+}
+
+.text-p {
+  font-size: 2.7rem;
+}
+
+/* Seção "Home" */
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5%;
+  position: sticky;
+  margin-top: 2rem;
+}
+
+.text-h1 {
+  font-size: 2.5rem;
+  color: #050505;
+}
+
+.text-h2 {
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1rem;
+}
+
+/* Estilos de conteúdo */
+.conteudo-principal,
+.conteudo-secundario {
+  margin-bottom: 4rem;
+  font-size: 110%;
+  padding-left: 2rem;
+}
+
+.text-h3,
+.text-h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: rgb(216, 83, 22);
+}
+
+.text-h5 {
+  font-size: 1.1rem;
+  margin-bottom: 5rem;
+  color: rgb(216, 83, 22);
+}
+
+/* Imagem principal */
+.img-principal {
+  border-radius: 35px;
+  margin: 10rem 0 0 30rem;
+  width: auto;
+  height: 15rem;
+}
+
+/* Botão "Home" */
+.home-btn {
+  font-size: 1.3rem;
+  color: rgb(216, 83, 22);
+  margin: 30rem 0 0 37rem;
+}
+
+/* Rodapé */
+.rodape {
+  padding: 10px 0;
+  background: #a39d9d;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+}
+
+/* Estilos para as imagens no rodapé */
+.img-rdp1,
+.img-rdp2,
+.img-rdp3 {
+  margin: 0;
+  width: 1.2%;
+  height: auto;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+/* Estilos para os textos no rodapé */
+.text-h6,
+.text-h7 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Estilos responsivos para telas menores */
+@media screen and (max-width: 768px) {
+  .text-p {
+    font-size: 1rem;
+  }
+  .nav-menu {
+    font-size: 7px;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+  }
+  .text-h1 {
+    font-size: 15px;
+  }
+  .text-h2 {
+    font-size: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .home-text {
+    font-size: 8px;
+  }
+
+  .img-principal {
+    width: 10rem;
+    margin: 0;
+  }
+
+  .text-h5 {
+    font-size: 15px;
+  }
+
+  .home-btn {
+    font-size: 0.7rem;
+    margin: 0 0 0 2rem;
+  }
+
+  .rodape {
+    margin: 2rem 0 0 0;
+    flex-direction: column;
+  }
+  .img-rdp1,
+  .img-rdp2,
+  .img-rdp3 {
+    height: auto;
+    width: 6.2%;
+  }
+
+  .text-h6,
+  .text-h7 {
+    font-size: 0.7rem;
+  }
+}
